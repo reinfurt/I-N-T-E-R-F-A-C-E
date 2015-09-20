@@ -1,4 +1,4 @@
-/* @pjs transparent=true; */
+/* @pjs transparent="true"; */
 /* @pjs globalKeyEvents="true"; */
 /* @pjs crisp=true; */
 
@@ -12,7 +12,7 @@ void setup() {
 }
 
 void draw() {
-  background(255);
+  background(255, 0);
   // fill(240);
   noFill();
   stroke(0);
