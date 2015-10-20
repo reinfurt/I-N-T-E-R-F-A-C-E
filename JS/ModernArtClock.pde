@@ -24,6 +24,7 @@ void draw() {
   float s = map(second(), 0, 60, 0, TWO_PI) - HALF_PI;
   float m = map(minute(), 0, 60, 0, TWO_PI) - HALF_PI;
   float h = map(hour() % 12, 0, 12, 0, TWO_PI) - HALF_PI;
+  h = h + 0.5;	// daylight savings?
   stroke(0);
   strokeWeight(1);
   line(100, 100, cos(s) * 72 + 100, sin(s) * 72 + 100);
